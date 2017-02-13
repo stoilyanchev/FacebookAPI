@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Social Invitation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo right">Social invitation</a>
+            <ul id="nav-mobile" class="left">
+                <li><a href="index.hbs">Local</a></li>
+                <li><a href="facebookRequest.hbs">Facebook</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main id="index">
+    <div class="container row">
+        <div class="row">
+            <h2 class="center-align">Facebook invitation</h2>
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{photo}}" alt="" class="circle">
+                </div>
+                <div class="card-content">
+                    <p>{{description}}</p>
+                    <i class="small material-icons">thumb_up</i>
+                    <span class="chip">{{likes}}</span>
+                    <i class="small material-icons">comment</i>
+                    <span class="chip">{{comments}}</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+<footer class="page-footer">
+</footer>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+</body>
+</html>
